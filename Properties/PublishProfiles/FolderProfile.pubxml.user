@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\PAWAN JANGID\Kentico_Projects\Goat_Publish</_PublishTargetUrl>
+    <History>True|2026-02-12T07:01:02.7225822Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="CMSConnectionString">
+      <Value>Data Source=.\SQLEXPRESS%3bInitial Catalog=KenticoGoat02%3bIntegrated Security=True%3bPersist Security Info=False%3bConnect Timeout=60%3bEncrypt=False%3bCurrent Language=English%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,83 @@
+wwwroot\Content\Bundles\Admin\pageComponents.css
+wwwroot\Content\Bundles\Admin\pageComponents.js
+wwwroot\Content\Bundles\Admin\pageComponents.min.css
+wwwroot\Content\Bundles\Admin\pageComponents.min.js
+wwwroot\Content\Bundles\Public\pageComponents.css
+wwwroot\Content\Bundles\Public\pageComponents.js
+wwwroot\Content\Bundles\Public\pageComponents.min.css
+wwwroot\Content\Bundles\Public\pageComponents.min.js
+wwwroot\Content\Fonts\Core-icons.eot
+wwwroot\Content\Fonts\Core-icons.svg
+wwwroot\Content\Fonts\Core-icons.ttf
+wwwroot\Content\Fonts\Core-icons.woff
+wwwroot\Content\Fonts\GT-Walsheim-Bold.woff
+wwwroot\Content\Fonts\GT-Walsheim-Bold.woff2
+wwwroot\Content\Fonts\GT-Walsheim-Light.woff
+wwwroot\Content\Fonts\GT-Walsheim-Light.woff2
+wwwroot\Content\Fonts\GT-Walsheim-Medium.woff
+wwwroot\Content\Fonts\GT-Walsheim-Medium.woff2
+wwwroot\Content\Fonts\GT-Walsheim-Regular.woff
+wwwroot\Content\Fonts\GT-Walsheim-Regular.woff2
+wwwroot\Content\Fonts\GT-Walsheim-Thin.woff
+wwwroot\Content\Fonts\GT-Walsheim-Thin.woff2
+wwwroot\Content\Fonts\PTSerif-Bold.woff
+wwwroot\Content\Fonts\SourceSansPro-Bold.woff
+wwwroot\Content\Fonts\SourceSansPro-Light.woff
+wwwroot\Content\Fonts\SourceSansPro-Regular.woff
+wwwroot\Content\Images\404.jpg
+wwwroot\Content\Images\bg.jpg
+wwwroot\Content\Images\cup.png
+wwwroot\Content\Images\default-avatar.png
+wwwroot\Content\Images\favicon.svg
+wwwroot\Content\Images\logo.svg
+wwwroot\Content\Images\plant-1.png
+wwwroot\Content\Images\plant-2.png
+wwwroot\Content\Images\plant-3.png
+wwwroot\Content\Images\plant-4.png
+wwwroot\Content\Styles\Buttons.less
+wwwroot\Content\Styles\Checkout.less
+wwwroot\Content\Styles\Controls.less
+wwwroot\Content\Styles\Fonts.less
+wwwroot\Content\Styles\Form.less
+wwwroot\Content\Styles\Grid.less
+wwwroot\Content\Styles\icons-core.less
+wwwroot\Content\Styles\Landing-page.css
+wwwroot\Content\Styles\Landing-page.less
+wwwroot\Content\Styles\Menu.less
+wwwroot\Content\Styles\Mixins.less
+wwwroot\Content\Styles\Products.less
+wwwroot\Content\Styles\Reset.less
+wwwroot\Content\Styles\Sections.less
+wwwroot\Content\Styles\Site.css
+wwwroot\Content\Styles\Site.less
+wwwroot\Content\Styles\TrackingConsent.less
+wwwroot\Content\Styles\variables.less
+wwwroot\PageBuilder\Admin\InlineEditors\ColorPickerEditor\color-picker-editor.js
+wwwroot\PageBuilder\Admin\InlineEditors\ColorPickerEditor\ColorPickerEditor.css
+wwwroot\PageBuilder\Admin\InlineEditors\TextEditor\text-editor.js
+wwwroot\PageBuilder\Admin\InlineEditors\TextEditor\TextEditor.css
+wwwroot\Scripts\formAutoPost.js
+wwwroot\Scripts\mobileMenu.js
+C:\Users\DST\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.2\build\..\_framework\blazor.web.js
+C:\Users\DST\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.2\build\..\_framework\blazor.server.js
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Bundles\Admin\pageComponents.css
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Bundles\Admin\pageComponents.js
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Bundles\Admin\pageComponents.min.css
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Bundles\Admin\pageComponents.min.js
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Bundles\Public\pageComponents.css
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Bundles\Public\pageComponents.js
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Bundles\Public\pageComponents.min.css
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Bundles\Public\pageComponents.min.js
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Fonts\Core-icons.svg
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Images\favicon.svg
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Images\logo.svg
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Styles\Landing-page.css
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Content\Styles\Site.css
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\PageBuilder\Admin\InlineEditors\ColorPickerEditor\color-picker-editor.js
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\PageBuilder\Admin\InlineEditors\ColorPickerEditor\ColorPickerEditor.css
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\PageBuilder\Admin\InlineEditors\TextEditor\text-editor.js
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\PageBuilder\Admin\InlineEditors\TextEditor\TextEditor.css
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Scripts\formAutoPost.js
+D:\PAWAN JANGID\Kentico_Projects\DancingGoat\wwwroot\Scripts\mobileMenu.js
+C:\Users\DST\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.2\_framework\blazor.web.js
+C:\Users\DST\.nuget\packages\microsoft.aspnetcore.app.internal.assets\10.0.2\_framework\blazor.server.js
