@@ -1,0 +1,103 @@
+name: Kentico DancingGoat CI-CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+        shell: powershell
+
+      - name: Build project
+        run: dotnet build --configuration Release --no-restore
+        shell: powershell
+
+      - name: Publish project
+        run: dotnet publish -c Release -o ./publish
+        shell: powershell
+
+      # ---------------- BACKUP ----------------
+
+      - name: Backup current deployment
+        shell: powershell
+        run: |
+          $source = "C:\inetpub\wwwroot\Kentico_publishGoat"
+          if (Test-Path $source) {
+            $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
+            $backupDir = "C:\inetpub\wwwroot\KenticoBackup\Backup_$timestamp"
+            New-Item -ItemType Directory -Force -Path $backupDir | Out-Null
+            Copy-Item -Path "$source\*" -Destination $backupDir -Recurse -Force
+            Write-Host "Backup created at $backupDir"
+          } else {
+            Write-Host "No existing deployment found, skipping backup."
+          }
+
+      # ---------------- STOP APP POOL ----------------
+
+      - name: Stop IIS App Pool
+        shell: powershell
+        run: |
+          Import-Module WebAdministration
+          Stop-WebAppPool -Name "DancingGoat"
+          Write-Host "App Pool stopped."
+
+      # ---------------- CLEAN (KEEP MEDIA & APP_DATA SAFE) ----------------
+
+      - name: Clean destination (Preserve media & App_Data)
+        shell: powershell
+        run: |
+          $dest = "C:\inetpub\wwwroot\Kentico_publishGoat"
+
+          if (-not (Test-Path $dest)) {
+              New-Item -ItemType Directory -Path $dest | Out-Null
+          }
+
+          Get-ChildItem $dest -Exclude "media","App_Data" | Remove-Item -Recurse -Force
+
+          Write-Host "Clean completed (media and App_Data preserved)."
+
+      # ---------------- COPY NEW FILES ----------------
+
+      - name: Copy new published files
+        shell: powershell
+        run: |
+          $source = "$env:GITHUB_WORKSPACE\publish"
+          $dest = "C:\inetpub\wwwroot\Kentico_publishGoat"
+          Copy-Item -Path "$source\*" -Destination $dest -Recurse -Force
+          Write-Host "Files copied successfully."
+
+      # ---------------- START APP POOL ----------------
+
+      - name: Start IIS App Pool
+        shell: powershell
+        run: |
+          Import-Module WebAdministration
+          Start-WebAppPool -Name "DancingGoat"
+          Write-Host "App Pool started."
+
+      # ---------------- RESTART IIS SITE ----------------
+
+      - name: Restart IIS Site
+        shell: powershell
+        run: |
+          Import-Module WebAdministration
+          if (Get-Website -Name "DancingGoat" -ErrorAction SilentlyContinue) {
+            Restart-WebItem "IIS:\Sites\DancingGoat"
+            Write-Host "Site 'DancingGoat' restarted."
+          } else {
+            Write-Host "IIS site 'DancingGoat' not found."
+          }
